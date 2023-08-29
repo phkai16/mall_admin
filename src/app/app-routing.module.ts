@@ -1,21 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ShopComponent } from './components/shop/shop.component';
-import { ProductComponent } from './components/product/product.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AddStoreComponent } from './components/addstore/addstore.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ShopComponent,
+    component: LoginComponent,
   },
   {
-    path: 'shop',
-    component: ShopComponent,
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path: 'product',
-    component: ProductComponent,
-  },
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      { path: 'dashboard', component: DashboardComponent},
+      { path: 'addstore', component: AddStoreComponent}
+    ]
+  }
 ];
 
 @NgModule({
