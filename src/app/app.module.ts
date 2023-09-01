@@ -9,6 +9,8 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AddStoreComponent } from './components/addstore/addstore.component';
+import { BaseUrlService } from './services/baseurl.service';
+import { AccountAPIService } from './services/accountapi.service';
 
 
 @NgModule({
@@ -21,8 +23,15 @@ import { AddStoreComponent } from './components/addstore/addstore.component';
     AdminComponent,
     AddStoreComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  
+  imports: [
+    BrowserModule,
+    AppRoutingModule],
+
+  providers: [
+    BaseUrlService,
+    AccountAPIService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
