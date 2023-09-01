@@ -174,11 +174,39 @@
             <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
 
+            <!-- Post -->
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-chart-pie"></i>
                 <p>
-                  Shopping Stores
+                  Posts
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>All Posts</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a [routerLink]="['/admin/addstore']" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add New </p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Store Management -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Store Management
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
@@ -200,6 +228,7 @@
               </ul>
             </li>
 
+            <!-- Food Court -->
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-chart-pie"></i>
@@ -224,6 +253,115 @@
                   </a>
                 </li>
               </ul>
+            </li>
+
+            <!-- Photos -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Gallery
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Library</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a [routerLink]="['/admin/addstore']" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add New </p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Reviews -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Reviews
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+            </li>
+
+            <!-- Products -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Products
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>All Products</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a [routerLink]="['/admin/addstore']" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add New </p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Brand </p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Ticket -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Movie Theater
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>All Movies</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a [routerLink]="['/admin/addstore']" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add New </p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a [routerLink]="['/admin/addstore']" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Booked Tickets </p>
+                  </a>
+                </li>
+              </ul>
+
             </li>
 
           </ul>
